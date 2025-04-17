@@ -42,6 +42,8 @@ GradientBoostingRegressor(
     random_state=42
 )
 
+---
+
 ## Demo
 
 You can access the live demo of the application by visiting the following link:  
