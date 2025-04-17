@@ -190,7 +190,7 @@ if submitted:
                 }).sort_values('Impact', ascending=True)
 
                 st.bar_chart(chart_data.set_index('Feature'), height=300)
-                st.caption("How each feature contributes to your House's's value")
+                st.caption("How each feature contributes to your House's value")
             with tab2:
                 st.line_chart(pd.DataFrame({
                     'Similar Homes': [pred_price*0.9, pred_price*1.1, pred_price*0.95, pred_price, pred_price*1.05],
