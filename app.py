@@ -190,13 +190,13 @@ if submitted:
                 }).sort_values('Impact', ascending=True)
 
                 st.bar_chart(chart_data.set_index('Feature'), height=300)
-                st.caption("How each feature contributes to your home's value")
+                st.caption("How each feature contributes to your House's's value")
             with tab2:
                 st.line_chart(pd.DataFrame({
                     'Similar Homes': [pred_price*0.9, pred_price*1.1, pred_price*0.95, pred_price, pred_price*1.05],
                     'Your Home': [None, None, None, pred_price, None]
                 }))
-                st.caption("Your home compared to similar properties in the market")
+                st.caption("Your house compared to similar properties in the market")
 
 st.markdown("---")
 st.markdown("🔗 [View Source Code on GitHub](https://github.com/wigjatin/House-prediction-model)")
