@@ -41,3 +41,7 @@ GradientBoostingRegressor(
     min_samples_leaf=5,
     random_state=42
 )
+
+## Demo
+You can access the live demo of the application by visiting the following link:
+[View Demo](house-prediction-model-jatin-wig.streamlit.app)
