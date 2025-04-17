@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import pickle
 import time
 
 st.set_page_config(
@@ -77,10 +76,11 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+from joblib import load
+
 @st.cache_resource
 def load_model():
-    with open("house_price_model.pkl", "rb") as f:
-        return pickle.load(f)
+    return load('house_price_model.joblib')
 
 model = load_model()
 
