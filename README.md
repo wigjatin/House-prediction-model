@@ -40,7 +40,7 @@ GradientBoostingRegressor(
     max_depth=4,
     min_samples_leaf=5,
     random_state=42
-)
+) ```
 
 ---
 
